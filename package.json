@@ -1,7 +1,7 @@
 {
-  "name": "@u3u/vue-hooks",
+  "name": "@hanxx/vue-hooks",
   "description": "⚡️ Awesome Vue Hooks",
-  "version": "2.0.1",
+  "version": "0.1.0",
   "publishConfig": {
     "access": "public"
   },
@@ -37,27 +37,31 @@
     "release": "semantic-release",
     "prepublishOnly": "yarn test && yarn build"
   },
-  "author": {
-    "name": "u3u",
-    "email": "qwq@qwq.cat",
-    "url": "https://qwq.cat"
-  },
+  "authors": [
+    {
+      "name": "u3u",
+      "email": "qwq@qwq.cat",
+      "url": "https://qwq.cat"
+    }, 
+    {
+      "name": "lianghx-319", 
+      "email": "xsytby1112@gmail.com"
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/u3u/vue-hooks"
+    "url": "https://github.com/lianghx-319/vue-hooks"
   },
   "bugs": {
-    "url": "https://github.com/u3u/vue-hooks/issues"
+    "url": "https://github.com/lianghx-319/vue-hooks/issues"
   },
-  "homepage": "https://github.com/u3u/vue-hooks#readme",
+  "homepage": "https://github.com/lianghx-319/vue-hooks#readme",
   "engines": {
     "node": ">=10.16.0"
   },
-  "dependencies": {
-    "dayjs": "^1.8.15"
-  },
   "devDependencies": {
+    "dayjs": "^1.8.15",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-typescript": "^7.3.3",
