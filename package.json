@@ -1,7 +1,7 @@
 {
   "name": "@hanxx/vue-hooks",
   "description": "⚡️ Awesome Vue Hooks",
-  "version": "0.1.0",
+  "version": "2.0.2",
   "publishConfig": {
     "access": "public"
   },
@@ -42,9 +42,9 @@
       "name": "u3u",
       "email": "qwq@qwq.cat",
       "url": "https://qwq.cat"
-    }, 
+    },
     {
-      "name": "lianghx-319", 
+      "name": "lianghx-319",
       "email": "xsytby1112@gmail.com"
     }
   ],
