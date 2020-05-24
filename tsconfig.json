@@ -27,6 +27,7 @@
     "esm",
     "**/__tests__/**/*",
     "**/__stories__/**/*",
-    "src/util/renderHook.ts"
+    "src/util/renderHook.ts",
+    "src/mocks"
   ]
 }
