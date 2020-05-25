@@ -2,7 +2,7 @@
 
 > ⚡️ Awesome Vue Hooks Fork From [@u3u/vue-hooks](https://github.com/u3u/vue-hooks)
 
-First of all, the original repository has no response for more features request, so I restart this repository and add some common useful features. Welcome PRs.
+First of all, the original repository has no response for more features request, so I start this repository and add some common useful features. Welcome PRs.
 
 Using [`@vue/composition-api`](https://github.com/vuejs/composition-api) to implement useful vue hooks.  
 Vue 3.0 has not been released yet, it allows you to use functional-based components in advance.
