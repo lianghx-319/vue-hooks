@@ -1,4 +1,3 @@
-import { watchEffect, ref } from '@vue/composition-api';
 import sinon from 'sinon';
 import { useClickAway } from '..';
 import renderHook from '../util/renderHook';
