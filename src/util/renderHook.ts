@@ -33,5 +33,6 @@ export default function renderHook<V, Props = unknown, Data = unknown>(
     router,
     store,
     stubs: ['router-view'],
+    attachToDocument: true,
   });
 }

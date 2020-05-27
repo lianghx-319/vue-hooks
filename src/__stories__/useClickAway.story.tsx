@@ -23,10 +23,7 @@ const Demo = defineComponent({
   setup(props, ctx) {
     const [count, { inc, dec, set, reset }] = useCounter();
     // @ts-ignore
-    const { element } = useClickAway(() => {
-      inc();
-      console.log(count.value);
-    });
+    const { element } = useClickAway(() => inc());
     return {
       element,
       count,
