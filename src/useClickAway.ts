@@ -1,11 +1,11 @@
-import { Ref, onMounted, ref, onUnmounted } from '@vue/composition-api';
+import { Ref, onMounted, onUnmounted, ref } from '@vue/composition-api';
 
-export default function useClickAway<T extends HTMLElement = HTMLDivElement>(
+export default function useClickAway(
   onClickAway: (event: Event) => void,
-  dom?: Ref<T>,
+  dom?: Ref<Vue | Element | Vue[] | Element[]>,
   eventName: keyof DocumentEventMap = 'click',
 ) {
-  const element = dom || ref<T>(null);
+  const element = dom || ref(null);
 
   const handler = (event: Event) => {
     // @ts-ignore
@@ -24,5 +24,7 @@ export default function useClickAway<T extends HTMLElement = HTMLDivElement>(
     document.removeEventListener(eventName, handler);
   });
 
-  return element;
+  return {
+    element,
+  };
 }

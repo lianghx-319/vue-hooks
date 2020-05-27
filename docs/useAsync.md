@@ -8,37 +8,38 @@ Vue hook for handling async state such as loading, success, error
 import { defineComponent } from '@vue/composition-api';
 import { useAsync } from '@u3u/vue-hooks';
 // async function like ajax etc
-import { getSomething } from '@vue/services';
+const sleep = (ms = 0) =>
+  new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('success');
+    }, ms);
+  });
 
 const Demo = defineComponent({
   setup() {
-    const { loading, resp, error, run } = useAsync(getSomething, {
+    const { run, loading, resp, error } = useAsync(sleep, {
       manual: true,
-      params: [pass, some, arguments, to, asyncFunction],
+      params: [2000],
     });
 
-    const buttonText = computed(() => {
-      if (loading) {
-        return 'loading...'
-      }
-      if (resp.isNotEmpty) {
-        return 'success'
-      }
-      return Fetch
-    })
-
-    return { loading, resp, error, run, buttonText };
+    return {
+      run,
+      loading,
+      resp,
+      error,
+    };
   },
 
-  render() {
-    const { loading, resp, error, run, buttonText } = this;
+  render(this: Vue & Inject) {
+    const { run, loading, resp, error } = this;
     return (
       <div>
-        {if (!error) {
-          <button onClick="run">buttonText</button>
-        } else {
-          <span>Oops! Fetch Error</span>
-        }}
+        <div>loading state: {loading.toString()}</div>
+        <div>resp state: {resp}</div>
+        <div style={{ marginTop: '10px' }}>error state: {error}</div>
+        <button onClick={() => run(2000)}>
+          {loading ? 'loading...' : 'Click to fetch something'}
+        </button>
       </div>
     );
   },

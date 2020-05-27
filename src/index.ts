@@ -16,6 +16,7 @@ export { default as useMountedState } from './useMountedState';
 export { default as useTimeout } from './useTimeout';
 export { default as useMedia } from './useMedia';
 export { default as useAsync } from './useAsync';
+export { default as useClickAway } from './useClickAway';
 
 export default function install(Vue: VueConstructor) {
   Vue.mixin({ beforeCreate: setRuntimeVM });
