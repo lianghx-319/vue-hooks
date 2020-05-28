@@ -8,7 +8,7 @@ Vue hook for [`mapMutations`](https://vuex.vuejs.org/api/#mapmutations).
 
 ```jsx {17,18,24,29,36,37}
 import { defineComponent } from '@vue/composition-api';
-import { useState, useGetters, useMutations } from '@u3u/vue-hooks';
+import { useState, useGetters, useMutations } from '@hanxx/vue-hooks';
 
 const Demo = defineComponent({
   setup() {

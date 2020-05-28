@@ -49,7 +49,7 @@
       "",
       "```jsx {6,11}",
       "import { defineComponent } from '@vue/composition-api';",
-      "import { use${1:Hook} } from '@u3u/vue-hooks';",
+      "import { use${1:Hook} } from '@hanxx/vue-hooks';",
       "",
       "const Demo = defineComponent({",
       "  setup() {",

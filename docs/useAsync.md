@@ -6,7 +6,7 @@ Vue hook for handling async state such as loading, success, error
 
 ```jsx {13}
 import { defineComponent } from '@vue/composition-api';
-import { useAsync } from '@u3u/vue-hooks';
+import { useAsync } from '@hanxx/vue-hooks';
 // async function like ajax etc
 const sleep = (ms = 0) =>
   new Promise((resolve) => {
