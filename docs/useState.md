@@ -8,7 +8,7 @@ Vue hook for [`mapState`](https://vuex.vuejs.org/api/#mapstate).
 
 ```jsx {7,8,14,18}
 import { defineComponent, computed } from '@vue/composition-api';
-import { useState } from '@u3u/vue-hooks';
+import { useState } from '@hanxx/vue-hooks';
 
 const Demo = defineComponent({
   setup() {

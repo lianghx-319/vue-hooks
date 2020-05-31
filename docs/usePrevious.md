@@ -6,7 +6,7 @@ Vue hook that returns the previous value.
 
 ```jsx {7,12,16}
 import { defineComponent, ref } from '@vue/composition-api';
-import { usePrevious } from '@u3u/vue-hooks';
+import { usePrevious } from '@hanxx/vue-hooks';
 
 const Demo = defineComponent({
   setup() {

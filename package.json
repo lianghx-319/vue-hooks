@@ -42,9 +42,9 @@
       "name": "u3u",
       "email": "qwq@qwq.cat",
       "url": "https://qwq.cat"
-    }, 
+    },
     {
-      "name": "lianghx-319", 
+      "name": "lianghx-319",
       "email": "xsytby1112@gmail.com"
     }
   ],
@@ -61,7 +61,6 @@
     "node": ">=10.16.0"
   },
   "devDependencies": {
-    "dayjs": "^1.8.15",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-typescript": "^7.3.3",
@@ -83,6 +82,7 @@
     "all-contributors-cli": "^6.8.1",
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
+    "dayjs": "^1.8.15",
     "eslint": "^6.2.2",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.1.0",
@@ -133,5 +133,8 @@
       "prettier --check",
       "git add"
     ]
+  },
+  "dependencies": {
+    "sinon": "^9.0.2"
   }
 }
