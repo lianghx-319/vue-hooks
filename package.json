@@ -1,7 +1,7 @@
 {
   "name": "@hanxx/vue-hooks",
   "description": "⚡️ Awesome Vue Hooks",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "public"
   },
