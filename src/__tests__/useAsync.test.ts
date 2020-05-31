@@ -1,4 +1,3 @@
-import { onMounted, ref } from '@vue/composition-api';
 import { useAsync } from '..';
 import renderHook from '../util/renderHook';
 import { ReturnValue } from '../useAsync';

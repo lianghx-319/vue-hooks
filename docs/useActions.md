@@ -8,7 +8,7 @@ Vue hook for [`mapActions`](https://vuex.vuejs.org/api/#mapactions).
 
 ```jsx {17,18,24,29,36,37}
 import { defineComponent } from '@vue/composition-api';
-import { useState, useGetters, useActions } from '@u3u/vue-hooks';
+import { useState, useGetters, useActions } from '@hanxx/vue-hooks';
 
 const Demo = defineComponent({
   setup() {
