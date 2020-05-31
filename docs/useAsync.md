@@ -4,7 +4,7 @@ Vue hook for handling async state such as loading, success, error
 
 # Usage
 
-```jsx {13}
+```jsx {13,14,15,33,34,35}
 import { defineComponent } from '@vue/composition-api';
 import { useAsync } from '@hanxx/vue-hooks';
 // async function like ajax etc

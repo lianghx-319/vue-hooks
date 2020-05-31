@@ -17,7 +17,7 @@ declare module '@vue/composition-api/dist/component/component' {
   }
 }
 
-// const Docs = () => <ShowDocs md={require('../../docs/useCounter.md')} />;
+const Docs = () => <ShowDocs md={require('../../docs/useClickAway.md')} />;
 
 const Demo = defineComponent({
   setup(props, ctx) {
@@ -48,5 +48,5 @@ const Demo = defineComponent({
 
 storiesOf('useClickAway', module)
   // @ts-ignore
-  // .add('docs', () => Docs)
+  .add('docs', () => Docs)
   .add('demo', () => Demo);
