@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/lianghx-319/vue-hooks/compare/v1.0.0...v1.0.1) (2020-05-31)
+
+
+### Bug Fixes
+
+* previously published version 1.0.0 ([0513e61](https://github.com/lianghx-319/vue-hooks/commit/0513e61))
+* previously published version 1.0.0 ([8c7c07a](https://github.com/lianghx-319/vue-hooks/commit/8c7c07a))
+
 # 1.0.0 (2020-05-31)
 
 
