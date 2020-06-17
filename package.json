@@ -18,7 +18,8 @@
   "typings": "lib/index.d.ts",
   "files": [
     "lib/",
-    "esm/"
+    "esm/",
+    "types"
   ],
   "scripts": {
     "start": "yarn storybook",

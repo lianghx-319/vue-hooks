@@ -1,7 +1,3 @@
-import { VueConstructor } from 'vue';
-import { setRuntimeVM } from './util/runtime';
-
-export * from './useDate';
 export { default as useDate } from './useDate';
 export { default as useWindowSize } from './useWindowSize';
 export { default as useCounter } from './useCounter';
@@ -18,6 +14,10 @@ export { default as useMedia } from './useMedia';
 export { default as useAsync } from './useAsync';
 export { default as useClickAway } from './useClickAway';
 
-export default function install(Vue: VueConstructor) {
-  Vue.mixin({ beforeCreate: setRuntimeVM });
+// 兼容旧版需要 Vue.use()
+export default function install() {
+  if (__DEV__) {
+    // eslint-disable-next-line no-console
+    console.warn('@hanxx/vue-hooks dont need to call Vue.use() anymore');
+  }
 }

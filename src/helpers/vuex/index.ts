@@ -1,7 +1,6 @@
-import { computed } from '@vue/composition-api';
+import { computed, getCurrentInstance } from '@vue/composition-api';
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
 import { useState, useGetters, useMutations, useActions } from './interface';
-import { getRuntimeVM } from '../../util/runtime';
 
 export enum Helper {
   State,
@@ -15,11 +14,13 @@ type Helpers = useState | useGetters | useMutations | useActions;
 function handleComputed(mappedFn: Function) {
   // TypeError: Cannot read property '_modulesNamespaceMap' of undefined
   // You must get `runtimeVM` in real time in the calculation properties.
-  return computed(() => mappedFn.call(getRuntimeVM()));
+  const vm = getCurrentInstance();
+  return computed(() => mappedFn.call(vm));
 }
 
 function handleMethods<T>(mappedFn: Function): T {
-  return mappedFn.bind(getRuntimeVM());
+  const vm = getCurrentInstance();
+  return mappedFn.bind(vm);
 }
 
 const helpers = {

@@ -2,7 +2,6 @@
 import Vue from 'vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import VueCompositionAPI, { defineComponent } from '@vue/composition-api';
-import { SetupFunction, Data } from '@vue/composition-api/dist/component';
 import { createRouter, createStore } from '../mocks';
 import hooks from '..';
 
@@ -10,12 +9,9 @@ const localVue = createLocalVue();
 const router = createRouter(localVue);
 const store = createStore(localVue);
 
-localVue.use(hooks);
 localVue.use(VueCompositionAPI);
 
-export default function renderHook<V, Props = unknown, Data = unknown>(
-  setup: SetupFunction<Props, Data>,
-) {
+export default function renderHook<V, Props = unknown, Data = unknown>(setup) {
   const App = defineComponent({
     template: `
       <div ref="app" id="app" :style="{ width: '1280px', height: '800px' }">
