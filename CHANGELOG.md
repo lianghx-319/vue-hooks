@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/lianghx-319/vue-hooks/compare/v1.0.1...v1.1.0) (2020-06-17)
+
+
+### Features
+
+* no neet to call Vue.use(hooks) ([#4](https://github.com/lianghx-319/vue-hooks/issues/4)) ([ac8183d](https://github.com/lianghx-319/vue-hooks/commit/ac8183d))
+
 ## [1.0.1](https://github.com/lianghx-319/vue-hooks/compare/v1.0.0...v1.0.1) (2020-05-31)
 
 
