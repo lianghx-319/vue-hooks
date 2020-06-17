@@ -18,7 +18,8 @@
   "typings": "lib/index.d.ts",
   "files": [
     "lib/",
-    "esm/"
+    "esm/",
+    "types"
   ],
   "scripts": {
     "start": "yarn storybook",
@@ -77,12 +78,12 @@
     "@types/storybook__vue": "^5.0.2",
     "@typescript-eslint/parser": "^2.0.0",
     "@vue/babel-preset-jsx": "^1.1.0",
-    "@vue/composition-api": "^0.5.0",
+    "@vue/composition-api": "^0.6.4",
     "@vue/test-utils": "^1.0.0-beta.29",
     "all-contributors-cli": "^6.8.1",
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
-    "dayjs": "^1.8.15",
+    "dayjs": "^1.8.28",
     "eslint": "^6.2.2",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.1.0",
@@ -101,6 +102,7 @@
     "prismjs": "^1.17.1",
     "rimraf": "^3.0.0",
     "semantic-release": "^15.13.24",
+    "sinon": "^9.0.2",
     "typescript": "^3.5.3",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.1",
@@ -133,8 +135,5 @@
       "prettier --check",
       "git add"
     ]
-  },
-  "dependencies": {
-    "sinon": "^9.0.2"
   }
 }

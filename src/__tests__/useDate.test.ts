@@ -1,5 +1,5 @@
 import { onMounted, onUnmounted } from '@vue/composition-api';
-import { useDate, dayjs } from '..';
+import { useDate, dayjs } from '../useDate';
 import renderHook from '../util/renderHook';
 
 describe('useDate', () => {
