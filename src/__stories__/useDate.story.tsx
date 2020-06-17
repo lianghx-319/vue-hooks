@@ -3,7 +3,7 @@ import 'vue-tsx-support/enable-check';
 import Vue from 'vue';
 import { storiesOf } from '@storybook/vue';
 import { defineComponent } from '@vue/composition-api';
-import { useDate, dayjs } from '..';
+import { useDate, dayjs } from '../useDate';
 import { ShowDocs } from './components';
 
 type Inject = {

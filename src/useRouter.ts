@@ -1,6 +1,5 @@
-import { computed } from '@vue/composition-api';
+import { computed, getCurrentInstance } from '@vue/composition-api';
 import VueRouter, { Route } from 'vue-router';
-import { getRuntimeVM } from './util/runtime';
 
 declare module 'vue/types/vue' {
   interface Vue {
@@ -10,7 +9,7 @@ declare module 'vue/types/vue' {
 }
 
 export default function useRouter() {
-  const vm = getRuntimeVM();
+  const vm = getCurrentInstance() as Vue;
   const route = computed(() => vm.$route);
   return { route, router: vm.$router };
 }
