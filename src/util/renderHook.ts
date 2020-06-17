@@ -3,7 +3,6 @@ import Vue from 'vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import VueCompositionAPI, { defineComponent } from '@vue/composition-api';
 import { createRouter, createStore } from '../mocks';
-import hooks from '..';
 
 const localVue = createLocalVue();
 const router = createRouter(localVue);

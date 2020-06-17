@@ -1,4 +1,3 @@
-export { default as useDate } from './useDate';
 export { default as useWindowSize } from './useWindowSize';
 export { default as useCounter } from './useCounter';
 export { default as usePrevious } from './usePrevious';
@@ -16,8 +15,6 @@ export { default as useClickAway } from './useClickAway';
 
 // 兼容旧版需要 Vue.use()
 export default function install() {
-  if (__DEV__) {
-    // eslint-disable-next-line no-console
-    console.warn('@hanxx/vue-hooks dont need to call Vue.use() anymore');
-  }
+  // eslint-disable-next-line no-console
+  console.warn('@hanxx/vue-hooks dont need to call Vue.use() anymore');
 }
