@@ -1,4 +1,4 @@
-# vue-hooks [![NPM Version](https://img.shields.io/npm/v/@hanxx/vue-hooks.svg)](https://www.npmjs.com/package/@hanxx/vue-hooks) [![Build Status](https://img.shields.io/travis/lianghx-319/vue-hooks/master.svg)](https://travis-ci.org/lianghx-319/vue-hooks) [![Code Coverage](https://img.shields.io/codecov/c/github/lianghx-319/vue-hooks.svg)](https://codecov.io/gh/lianghx-319/vue-hooks) [![Total alerts](https://img.shields.io/lgtm/alerts/g/lianghx-319/vue-hooks.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/lianghx-319/vue-hooks/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/lianghx-319/vue-hooks.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/lianghx-319/vue-hooks/context:javascript)
+# vue-hooks [![NPM Version](https://img.shields.io/npm/v/@hanxx/vue-hooks.svg)](https://www.npmjs.com/package/@hanxx/vue-hooks) [![Build Status](https://img.shields.io/travis/lianghx-319/vue-hooks/master.svg)](https://travis-ci.org/lianghx-319/vue-hooks) [![Code Coverage](https://img.shields.io/codecov/c/github/lianghx-319/vue-hooks.svg)](https://codecov.io/gh/lianghx-319/vue-hooks) [![Total alerts](https://img.shields.io/lgtm/alerts/g/lianghx-319/vue-hooks.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/lianghx-319/vue-hooks/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/lianghx-319/vue-hooks.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/lianghx-319/vue-hooks/context:javascript) [![Netlify Status](https://api.netlify.com/api/v1/badges/24ca2187-6118-491b-b4d1-684a823b3565/deploy-status)](https://app.netlify.com/sites/nervous-noyce-43dffd/deploys)
 
 > ⚡️ Awesome Vue Hooks Fork From [@u3u/vue-hooks](https://github.com/u3u/vue-hooks)
 
@@ -15,20 +15,34 @@ Another useful vue-hooks repository is [vue-use-web](https://github.com/Tarektou
 yarn add @vue/composition-api @hanxx/vue-hooks
 ```
 
-## Documentation [![Netlify Status](https://api.netlify.com/api/v1/badges/778cb6bd-4de1-4ce9-b62a-6a87e0a8466f/deploy-status)](https://app.netlify.com/sites/zen-torvalds-127706/deploys)
+## Documentation
 
 Docs are available at <https://vue-hooks.hanxx.icu>
 
 ## Usage
 
+> Now don't need `Vue.use(hooks)` to install plugin
+
 ```js
+// main.js
 import Vue from 'vue';
 import VueCompositionAPI from '@vue/composition-api';
-import hooks from '@hanxx/vue-hooks';
 
-Vue.use(hooks);
 Vue.use(VueCompositionAPI); // Don't forget to use the plugin!
 ```
+
+> If use `useDate`, remember installing `dayjs`
+
+```sh
+yarn add dayjs
+```
+
+```js
+// You can use dayjs directly here
+import { useDate, dayjs } from '@hanxx/vue-hooks/lib/useDate';
+```
+
+> If haven't use `useDate`, `dayjs` is not a necessary dependence
 
 ```jsx
 import { defineComponent } from '@vue/composition-api';
@@ -50,19 +64,6 @@ export default defineComponent({
   },
 });
 ```
-
-## Hooks
-
-- [`useDate`](https://vue-hooks.netlify.com/?path=/story/usedate--docs) &mdash; Using [`dayjs`](https://github.com/iamkun/dayjs) to process date.
-- [`useWindowSize`](https://vue-hooks.netlify.com/?path=/story/usewindowsize--docs) &mdash; Tracks `window` dimensions.
-- [`useCounter`](https://vue-hooks.netlify.com/?path=/story/usecounter--docs) &mdash; Tracks state of a number.
-- [`usePrevious`](https://vue-hooks.netlify.com/?path=/story/useprevious--docs) &mdash; Returns the previous state or props.
-- [`useRouter`](https://vue-hooks.netlify.com/?path=/story/userouter--docs) &mdash; A hook for [`vue-router`](https://github.com/vuejs/vue-router).
-- [`useStore`](https://vue-hooks.netlify.com/?path=/story/usestore--docs) &mdash; A hook for [`vuex`](https://github.com/vuejs/vuex).
-- [`useState`](https://vue-hooks.netlify.com/?path=/story/usestate--docs) &mdash; A hook for [`mapState`](https://vuex.vuejs.org/api/#mapstate).
-- [`useGetters`](https://vue-hooks.netlify.com/?path=/story/usegetters--docs) &mdash; A hook for [`mapGetters`](https://vuex.vuejs.org/api/#mapgetters).
-- [`useMutations`](https://vue-hooks.netlify.com/?path=/story/usemutations--docs) &mdash; A hook for [`mapMutations`](https://vuex.vuejs.org/api/#mapmutations).
-- [`useActions`](https://vue-hooks.netlify.com/?path=/story/useactions--docs) &mdash; A hook for [`mapActions`](https://vuex.vuejs.org/api/#mapactions).
 
 ## Contributing
 
