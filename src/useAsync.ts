@@ -4,7 +4,7 @@ export interface ReturnValue<Result = any> {
   loading: Ref<boolean>;
   error: Ref<Error>;
   resp: Ref<Result>;
-  run: (...args: any[]) => void | Promise<Result>;
+  run: (...args: any[]) => Promise<Result>;
 }
 
 export interface Options<Result = any> {
