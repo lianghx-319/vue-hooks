@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/lianghx-319/vue-hooks/compare/v1.1.0...v1.1.1) (2020-07-06)
+
+
+### Bug Fixes
+
+* **hook:** useAsync manul run function return type ([#5](https://github.com/lianghx-319/vue-hooks/issues/5)) ([3dd6b1f](https://github.com/lianghx-319/vue-hooks/commit/3dd6b1f))
+
 # [1.1.0](https://github.com/lianghx-319/vue-hooks/compare/v1.0.1...v1.1.0) (2020-06-17)
 
 
